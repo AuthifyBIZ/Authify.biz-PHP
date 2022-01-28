@@ -130,6 +130,6 @@ class api {
     }
 
     private $user_agent = "Mozilla Authify";
-    private $api_endpoint = "https://authify.biz/api/uni_handler.php";
+    private $api_endpoint = "https://dev.authify.biz/api/uni_handler.php";
     private $pub_key = "sha256//0NYo0aeAbmNIW39KWcsxgDHmx8++MDco7jxzQN26XdM=";
 }
