@@ -1,7 +1,7 @@
 <?php
 require 'authify.php';
 
-$auth_instance = new authify\api("1", "SohlbGq2f9tlmeVdZQLKQzV26UzH8HCt57yxyGPmFRL", "d0175faa57283f2256c0795637a171c9");
+$auth_instance = new authify\api("VERSION", "PROGRAM KEY", "API / ENC KEY");
 
 if (isset($_GET['submit'])) {
     $logged_in = $auth_instance->login($_GET['username'], $_GET['password']);
