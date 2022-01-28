@@ -1,9 +1,9 @@
 <?php
 require 'authify.php';
 
-$auth_instance = new authify\api("VERSION", "PROGRAM KEY", "API / ENC KEY");
+$auth_instance = new authify\api("1", "SohlbGq2f9tlmeVdZQLKQzV26UzH8HCt57yxyGPmFRL", "d0175faa57283f2256c0795637a171c9");
 
-if (isset($_POST['submit'])) {
+if (isset($_GET['submit'])) {
     $logged_in = $auth_instance->login($_GET['username'], $_GET['password']);
 
     if ($logged_in) { //do something in case the login was successful

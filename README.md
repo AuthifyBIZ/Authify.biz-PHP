@@ -21,7 +21,7 @@ require 'authify.php';
 
 $auth_instance = new authify\api("VERSION", "PROGRAM KEY", "API / ENC KEY");
 
-if (isset($_POST_['submit'])) {
+if (isset($_GET['submit'])) {
     $logged_in = $auth_instance->login($_GET['username'], $_GET['password']);
 
     if ($logged_in) {
@@ -39,7 +39,7 @@ require 'authify.php';
 
 $auth_instance = new authify\api("VERSION", "PROGRAM KEY", "API / ENC KEY");
 
-if (isset($_POST_['submit'])) {
+if (isset($_GET['submit'])) {
     $logged_in = $auth_instance->register($_GET['username'], $_GET['email'], $_GET['password'], $_GET['token']);
 
     if ($logged_in) {
@@ -57,7 +57,7 @@ require 'authify.php';
 
 $auth_instance = new authify\api("VERSION", "PROGRAM KEY", "API / ENC KEY");
 
-if (isset($_POST['submit'])) {
+if (isset($_GET['submit'])) {
     $logged_in = $auth_instance->activate($_GET['username'],  $_GET['token']);
 
     if ($logged_in) {
@@ -75,7 +75,7 @@ require 'authify.php';
 
 $auth_instance = new authify\api("VERSION", "PROGRAM KEY", "API / ENC KEY");
 
-if(isset($_POST['submit'])){
+if(isset($_GET['submit'])){
 	$logged_in = $auth_instance->all_in_one($_GET['token']);
 
 	if($logged_in){
@@ -93,7 +93,7 @@ require 'authify.php';
 
 $auth_instance = new authify\api("VERSION", "PROGRAM KEY", "API / ENC KEY");
 
-if(isset($_POST['submit'])){
+if(isset($_GET['submit'])){
 	$logged_in = $auth_instance->log($_GET['username'], $_GET['message']);
 
 	if($logged_in){
