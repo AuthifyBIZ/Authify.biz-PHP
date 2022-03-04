@@ -131,5 +131,5 @@ class api {
 
     private $user_agent = "Mozilla Authify";
     private $api_endpoint = "https://dev.authify.biz/api/v1/universal/";
-    private $pub_key = "sha256//0NYo0aeAbmNIW39KWcsxgDHmx8++MDco7jxzQN26XdM=";
+    private $pub_key = "sha256//3R4shQbhHiSYO88iT9nCXQojoA9twk6Of5qsH5VRMKQ=";
 }
